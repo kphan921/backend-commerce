@@ -18,6 +18,7 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'awesome_print'
 gem 'fast_jsonapi'
+gem 'jwt'
 
 
 # Use Active Storage variant

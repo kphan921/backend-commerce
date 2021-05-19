@@ -3,7 +3,7 @@ Order.destroy_all
 Item.destroy_all
 
 
-u1 = User.create(username: "bob", password_digest: "aaaa")
+u1 = User.create(username: "bob", password: "aaaa")
 u2 = User.create(username: "kai", password: "12345")
 u3 = User.create(username: "kim", password: "abcde")
 
