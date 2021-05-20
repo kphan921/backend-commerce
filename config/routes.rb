@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :auth, only: [:create]
 
   resources :orders
+  resources :items
   
 
 end
