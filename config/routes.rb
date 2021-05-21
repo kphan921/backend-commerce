@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   resources :orders
   resources :items
   
-
+  post '/signup', to: 'users#create'
 end
