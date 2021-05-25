@@ -20,9 +20,9 @@ class OrdersController < ApplicationController
 
 
     def destroy
-        order = Order.find_by(id: params[:id])
+        order = current_user.orders.find_by(item_id: params[:id])
         if order.destroy
-            render json: order
+            render json: OrderSerializer.new(order)
         else
             render json: {error: 'Something went wrong'}
         

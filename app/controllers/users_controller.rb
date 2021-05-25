@@ -2,8 +2,8 @@ class UsersController < ApplicationController
     skip_before_action :authorized, only: [:create]
 
     def index
-        @user = current_user
-        render :json => UserSerializer.new(@user)
+        user = current_user
+        render :json => user
     end
     
 
@@ -17,10 +17,6 @@ class UsersController < ApplicationController
             render :json => { msg: "Signup failed.." }
         end
     end
-
-
-
-
 
 
     
