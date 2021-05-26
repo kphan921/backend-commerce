@@ -3,7 +3,7 @@ class UsersController < ApplicationController
 
     def index
         user = current_user
-        render :json => user
+        render :json => UserSerializer.new(user)
     end
     
 
