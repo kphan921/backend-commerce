@@ -1,6 +1,7 @@
 User.destroy_all
 Order.destroy_all
 Item.destroy_all
+Review.destroy_all
 
 
 u1 = User.create(username: "bob", password: "aaaa")
@@ -41,3 +42,9 @@ Order.create(user_id: User.ids.sample, item_id: Item.ids.sample)
 Order.create(user_id: User.ids.sample, item_id: Item.ids.sample)
 Order.create(user_id: User.ids.sample, item_id: Item.ids.sample)
 Order.create(user_id: User.ids.sample, item_id: Item.ids.sample)
+
+
+
+500.times do 
+    Review.create(text: "Great product", user_id: User.ids.sample, item_id: Item.ids.sample)
+end

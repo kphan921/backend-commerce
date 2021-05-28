@@ -3,7 +3,7 @@ class ItemsController < ApplicationController
 
     def index
         items = Item.all
-        render json: items
+        render json: items.to_json(:include => :reviews)
     end
     
 

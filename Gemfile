@@ -19,7 +19,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'awesome_print'
 gem 'fast_jsonapi'
 gem 'jwt'
-
+gem 'faker'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
