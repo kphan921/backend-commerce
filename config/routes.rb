@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :auth, only: [:create]
 
   resources :orders
+  resources :reviews
   resources :items
   
   post '/signup', to: 'users#create'
