@@ -45,6 +45,6 @@ Order.create(user_id: User.ids.sample, item_id: Item.ids.sample)
 
 
 
-500.times do 
+50.times do 
     Review.create(text: "Great product", user_id: User.ids.sample, item_id: Item.ids.sample)
 end
