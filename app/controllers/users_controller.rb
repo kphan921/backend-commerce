@@ -16,6 +16,16 @@ class UsersController < ApplicationController
     end
   end
 
+  def update
+      if current_user.update(user_params)
+        user = current_user
+        render :json => UserSerializer.new(user)
+      else
+        render :json => { msg: "Update failed.." }
+      end
+  end
+  
+
   private
 
   def user_params
